@@ -13,18 +13,27 @@
         <!-- .page title -->
         <div class="col-lg-3 col-md-4 col-sm-4 col-xs-12">
             <h4 class="page-title"><i class="{{ $pageIcon }}"></i> {{ $pageTitle }}</h4>
+            
         </div>
         <!-- /.page title -->
         <!-- .breadcrumb -->
         <div class="col-lg-9 col-sm-8 col-md-8 col-xs-12">
+                    <iframe src="http://free.timeanddate.com/clock/i7ojb7s7/n4378/fs16/tt0/th2/ta1/tb1" frameborder="0" width="411" height="20"></iframe>
 
-            <div class="col-md-3 pull-right hidden-xs hidden-sm">
+            <div class="col-md-10 pull-right hidden-xs hidden-sm">
+
                 {!! Form::open(['id'=>'createProject','class'=>'ajax-form','method'=>'POST']) !!}
                 <div class="btn-group dropdown keep-open pull-right m-l-10">
+
+                    <button class="btn fbtn" onclick="toggleFullscreen();"> 
+                        <i class="fa fa-arrows-alt"></i>
+                    </button>
                     <button aria-expanded="true" data-toggle="dropdown"
                             class="btn bg-white b-all dropdown-toggle waves-effect waves-light"
                             type="button"><i class="icon-settings"></i>
                     </button>
+
+
                     <ul role="menu" class="dropdown-menu  dropdown-menu-right dashboard-settings">
                             <li class="b-b"><h4>@lang('modules.dashboard.dashboardWidgets')</h4></li>
 
@@ -817,6 +826,22 @@
         });
 
     </script>
+    <script type="text/javascript">
+  function toggleFullscreen(event) {
+  var element = document.documentElement;
+
+  if (event instanceof HTMLElement) {
+    element = event;
+  }
+
+  var isFullscreen = document.webkitIsFullScreen || document.mozFullScreen || false;
+
+  element.requestFullScreen = element.requestFullScreen || element.webkitRequestFullScreen || element.mozRequestFullScreen || function () { return false; };
+  document.cancelFullScreen = document.cancelFullScreen || document.webkitCancelFullScreen || document.mozCancelFullScreen || function () { return false; };
+
+  isFullscreen ? document.cancelFullScreen() : element.requestFullScreen();
+}
+</script>
     <script>
         @if(\Froiden\Envato\Functions\EnvatoUpdate::showReview())
         $(document).ready(function () {
