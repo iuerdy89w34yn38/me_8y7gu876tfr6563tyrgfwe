@@ -13,12 +13,12 @@
         <!-- .page title -->
         <div class="col-lg-3 col-md-4 col-sm-4 col-xs-12">
             <h4 class="page-title"><i class="{{ $pageIcon }}"></i> {{ $pageTitle }}</h4>
-            
+
         </div>
         <!-- /.page title -->
         <!-- .breadcrumb -->
         <div class="col-lg-9 col-sm-8 col-md-8 col-xs-12">
-                    <iframe src="http://free.timeanddate.com/clock/i7ojb7s7/n4378/fs16/tt0/th2/ta1/tb1" frameborder="0" width="411" height="20"></iframe>
+                    <iframe src="https://free.timeanddate.com/clock/i7ojb7s7/n4378/fs16/tt0/th2/ta1/tb1" frameborder="0" width="411" height="20"></iframe>
 
             <div class="col-md-10 pull-right hidden-xs hidden-sm">
 
