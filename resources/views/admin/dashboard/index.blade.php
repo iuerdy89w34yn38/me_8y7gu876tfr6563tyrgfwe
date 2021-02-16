@@ -125,12 +125,13 @@
                 </div>
             @endif
         @endif
-
+<!--
         @if(!$progress['progress_completed'])
             @include('admin.dashboard.get_started')
         @endif
-    </div>
+    -->
 
+    </div>
     <div class="white-box">
         <div class="row dashboard-stats front-dashboard">
 
